@@ -11,32 +11,46 @@ body {
     padding: 0px;
 } 
 
-.container {
+.hero {
     display: flex;
-    flex-direction: row;
     height: 100vh;
-    width: 100vw;
-    margin: 0px 0px 0px 0px;
-    padding: 0px;
-} 
-
-.coffee {
-    background-color: red;
-    width: 50vw;
-    margin: 0px auto;
-    padding: 0px;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent; 
-    
-    border-right:10px solid blue
-}
-
-.bike {
-    background-color: black;
-    width: 50vw;
-    margin: 0px auto;
-    padding: 0px;
-} 
+    width: 100%;
+    flex-flow: row nowrap;
+    font-size: 2em;
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+  }
+  
+  .hero div{
+    display: flex;
+    position: relative;
+    background-color: tomato;
+    width: 50%;
+    padding: 50px;
+  }
+  .hero div:first-child{
+    margin-right: 110px;
+  }
+  
+  .hero_1:after, .hero_2:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .hero_1:after {
+      left: 100%;
+      border-top: 100vh solid tomato;
+      border-right: 100px solid transparent;
+  }
+  .hero_2:before {
+      right: 100%;
+      border-bottom: 776px solid tomato;
+      border-left: 100px solid transparent;
+  }
 
 /* Small Screens
 @media only screen and (max-width: 475px){
