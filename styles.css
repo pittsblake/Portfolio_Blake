@@ -1,41 +1,63 @@
 body {
-    background-color: cyan;
+    background-color: white;
 }
 
 nav {
-    background-color: cyan;
+    background-color: white;
     padding: 30px;
 }
 
 header {
     width: 70vw;
-    color: white;
+    color: #39CCCC;
     padding: 30px;
 }
 
 main {
-    background-color: white;
-    padding: 30px;
+    background-color: #F8F8F8;
+    padding: 75px 0px 200px 0px;
+    
 }
-td {
-    margin: 50px;
-}
-tr:hover {
-    background-color: green;
-} 
 
 .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: thin solid; 
+    padding: 10px 0px 10px 5px;
+    /* border-bottom: thin solid;  */
 }
 
 .row:hover {
-    background-color: white;
+    background-color: #ccccff;
+    color: white;
 }
 
 a {
     text-decoration: none;
     color: black
+}
+
+footer{ 
+    width: 75%;
+    margin: 100px 0px;
+    padding: 30px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 50px 0px;
+}
+
+.work-space{
+    padding: 30px;
+}
+
+.project-space{
+    padding-left: 30px
+}
+
+.link-space{
+    margin-right: 20px;
 }
